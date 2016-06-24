@@ -1,0 +1,16 @@
+dn: cn=managers,ou=groups,dc=example,dc=com
+objectClass: groupOfNames
+cn: managers
+member: uid=administrator,ou=users,dc=example,dc=com
+member: uid=testuser01,ou=users,dc=example,dc=com
+member: uid=testuser02,ou=users,dc=example,dc=com
+member: uid=testuser03,ou=users,dc=example,dc=com
+
+dn: cn=section01,ou=groups,dc=example,dc=com
+objectClass: groupOfNames
+cn: section01
+member: uid=administrator,ou=users,dc=example,dc=com
+member: uid=testuser11,ou=users,dc=example,dc=com
+member: uid=testuser12,ou=users,dc=example,dc=com
+member: uid=testuser13,ou=users,dc=example,dc=com
+
