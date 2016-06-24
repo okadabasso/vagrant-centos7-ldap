@@ -1,0 +1,30 @@
+{
+  "name": "sample",
+  "normal": {
+    "yum": {
+      "remi-php70": {
+        "repositoryid": "remi-php70",
+        "gpgkey": "http://rpms.famillecollet.com/RPM-GPG-KEY-remi",
+        "baseurl": "http://rpms.famillecollet.com/enterprise/7/php70/x86_64/",
+        "description": "Les RPM de remi de PHP 7 pour Enterprise Linux 7 - $basearch",
+        "mirrorlist": "http://rpms.famillecollet.com/enterprise/7/php70/mirror"
+      }
+    },
+    "yum-remi": {
+      "repositories": [
+        "remi",
+        "remi-php70"
+      ]
+    },
+    "tags": [
+
+    ]
+  },
+  "run_list": [
+    "recipe[yum]",
+    "recipe[yum-epel]",
+    "recipe[init]",
+    "recipe[php]",
+    "recipe[ldap]"
+  ]
+}

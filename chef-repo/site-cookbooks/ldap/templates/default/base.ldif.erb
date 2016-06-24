@@ -1,0 +1,13 @@
+dn: <%= node['ldap']['baseDN'] %>
+objectClass: dcObject
+objectClass: organization
+dc: <%= node['ldap']['dc'][0] %>
+o: <%= node['ldap']['dc'][0] %>
+
+dn: ou=users,<%= node['ldap']['baseDN'] %>
+objectClass: organizationalUnit
+ou: users
+
+dn: ou=groups,<%= node['ldap']['baseDN'] %>
+objectClass: organizationalUnit
+ou: groups
